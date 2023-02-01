@@ -54,7 +54,7 @@ npx hardhat run --network consensyszk scripts/deployL2.js
 Output
 
 ```sh
-L2Contract deployed to: 0xB89f2CeD93Cdbe9Fc48Ac43b730280D8083872bD
+L2Contract deployed to: 0x4A6a249Db5C65F4d87f0F962fa9a46cFC442293D
 ```
 
 ### Deploy L1 Contract
@@ -62,14 +62,14 @@ L2Contract deployed to: 0xB89f2CeD93Cdbe9Fc48Ac43b730280D8083872bD
 Command
 
 ```sh
-L2_CONTRACT=0xB89f2CeD93Cdbe9Fc48Ac43b730280D8083872bD \
+L2_CONTRACT=0x4A6a249Db5C65F4d87f0F962fa9a46cFC442293D \
 npx hardhat run --network goerli scripts/deployL1.js
 ```
 
 Output
 
 ```sh
-L1Contract deployed to: 0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F
+L1Contract deployed to: 0x29c514fA55a073EAE67Db285Bde984eB09BC4143
 ```
 
 ### Get Relay Fee
@@ -92,16 +92,16 @@ Command (replace env vars with your values)
 
 ```sh
 GREETING="hello world" \
-L2_CONTRACT=0xB89f2CeD93Cdbe9Fc48Ac43b730280D8083872bD \
-L1_CONTRACT=0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F \
+L2_CONTRACT=0x4A6a249Db5C65F4d87f0F962fa9a46cFC442293D \
+L1_CONTRACT=0x29c514fA55a073EAE67Db285Bde984eB09BC4143 \
 npx hardhat run --network consensyszk scripts/sendL2ToL1Message.js
 ```
 
 Output
 
 ```sh
-sent tx hash 0xe8fb9b5883a557d5f93bbab21a0e5dc90b454adc719640a780796edeead7bc66
-https://explorer.goerli.zkevm.consensys.net/tx/0xe8fb9b5883a557d5f93bbab21a0e5dc90b454adc719640a780796edeead7bc66
+sent tx hash 0xe118d29f573034da2bd5e30bf0b7e5c00af09d550a02e5e3854a82a9420d681d
+https://explorer.goerli.zkevm.consensys.net/tx/0xe118d29f573034da2bd5e30bf0b7e5c00af09d550a02e5e3854a82a9420d681d
 ```
 
 ### Get Greeting on L1
@@ -109,7 +109,7 @@ https://explorer.goerli.zkevm.consensys.net/tx/0xe8fb9b5883a557d5f93bbab21a0e5dc
 Command
 
 ```sh
-L1_CONTRACT=0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F \
+L1_CONTRACT=0x29c514fA55a073EAE67Db285Bde984eB09BC4143 \
 npx hardhat run --network goerli scripts/getGreetingOnL1.js
 ```
 
