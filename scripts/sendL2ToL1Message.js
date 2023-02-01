@@ -33,7 +33,7 @@ async function main() {
   const minimumFeeMethodId = ethers.utils.id('minimumFee()').slice(0, 10)
   const callResult = await provider.call({to: l2BridgeAddress, data: minimumFeeMethodId })
   const fee = hre.ethers.BigNumber.from(callResult)
-  const tx = await l2Contract.sendMessage(to, calldata, fee, { value: fee })
+  const tx = await l2Contract.sendMessageToL1(to, calldata, fee, { value: fee })
   await tx.wait()
 
   console.log(`sent tx hash ${tx.hash}`)

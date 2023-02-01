@@ -10,7 +10,7 @@ contract L2Contract {
       l2Bridge = _l2Bridge;
     }
 
-    function sendMessage(address _to, bytes memory _calldata, uint256 fee) payable public {
+    function sendMessageToL1(address _to, bytes memory _calldata, uint256 fee) payable public {
       uint256 deadline = 999999999999;
 
       IBridge bridge = IBridge(l2Bridge);

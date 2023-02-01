@@ -69,7 +69,7 @@ npx hardhat run --network goerli scripts/deployL1.js
 Output
 
 ```sh
-L1Contract deployed to: 0x55845FeEdC708609B76AbB0f6D7306292CC28EB7
+L1Contract deployed to: 0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F
 ```
 
 ### Get Relay Fee
@@ -93,7 +93,7 @@ Command (replace env vars with your values)
 ```sh
 GREETING="hello world" \
 L2_CONTRACT=0xB89f2CeD93Cdbe9Fc48Ac43b730280D8083872bD \
-L1_CONTRACT=0x55845FeEdC708609B76AbB0f6D7306292CC28EB7 \
+L1_CONTRACT=0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F \
 npx hardhat run --network consensyszk scripts/sendL2ToL1Message.js
 ```
 
@@ -109,7 +109,7 @@ https://explorer.goerli.zkevm.consensys.net/tx/0xe8fb9b5883a557d5f93bbab21a0e5dc
 Command
 
 ```sh
-L1_CONTRACT=0x55845FeEdC708609B76AbB0f6D7306292CC28EB7 \
+L1_CONTRACT=0xB8F52aF6398e01fa17B6B2be4aB24342C4E76d0F \
 npx hardhat run --network goerli scripts/getGreetingOnL1.js
 ```
 

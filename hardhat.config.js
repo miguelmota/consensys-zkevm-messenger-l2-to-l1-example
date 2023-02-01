@@ -28,11 +28,11 @@ module.exports = {
   defaultNetwork: 'consensyszk',
   networks: {
     consensyszk: {
-      url: 'https://consensys-zkevm-goerli-prealpha.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
+      url: process.env.CONSENSYS_ZKEVM_RPC || 'https://consensys-zkevm-goerli-prealpha.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
       accounts: [privateKey]
     },
     goerli: {
-      url: 'https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
+      url: process.env.GOERLI_RPC || 'https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161',
       accounts: [privateKey]
     },
   },
