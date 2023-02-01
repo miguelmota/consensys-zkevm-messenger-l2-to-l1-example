@@ -6,7 +6,7 @@
 
 There's two contracts; `L2Contract.sol` and `L1Contract.sol`
 
-The L2 contract has a method `sendGreetingMessageToL1` that sends a message to L1 contract to set a greeting message on L1 contract.
+The L2 contract has a method `sendGreetingMessageToL1` that sends a message form L2 to L1 contract to set a greeting message on L1 contract.
 It sends the encoded calldata to execute `setGreeting` on L1 which can only be called if the message was sent by the L2 contract.
 
 ### Files
