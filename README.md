@@ -1,6 +1,6 @@
 # ConsenSys zkEVM Messenger L2->L1 Example
 
-> Send a message from L2 ConsenSys zkEVM testnet to L1 Goerli.
+> Send a message from L2 [ConsenSys zkEVM](https://docs.zkevm.consensys.net/) testnet to L1 Goerli.
 
 ## Example
 
@@ -118,6 +118,10 @@ Output
 ```sh
 greeting: hello world
 ```
+
+### Send L1->L2 Message
+
+See [https://github.com/miguelmota/consensys-zkevm-messenger-l2-to-l1-example](https://github.com/miguelmota/consensys-zkevm-messenger-l2-to-l1-example)
 
 ## License
 
